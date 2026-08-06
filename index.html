@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transporte Carela - Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+
+    <img src="Logo.png" alt="Transporte Carela Logo" class="logo" />
+
+    <h2 class="title">Transporte Carela</h2>
+
+    <p class="subtitle">
+      Te pedimos que dediques un momento para revisar tu experiencia con nosotros.<br>
+      Tu opinión nos ayuda a mejorar y a apoyar a nuevos clientes.
+    </p>
+
+    <h3 class="question">¿Nos recomendarías?</h3>
+
+    <div class="rating">
+      <button class="rate green" onclick="showGoogle()">⭐ 5</button>
+      <button class="rate green" onclick="showGoogle()">⭐ 4</button>
+
+      <a class="rate red" href="negativa.html">⭐ 3</a>
+      <a class="rate red" href="negativa.html">⭐ 2</a>
+      <a class="rate red" href="negativa.html">⭐ 1</a>
+    </div>
+
+    <p class="note">
+      Si tu experiencia no fue excelente, queremos solucionarlo.
+    </p>
+
+    <a class="contact-btn" href="https://wa.me/18096244955?text=Hola%20Transporte%20Carela,%20quiero%20hablar%20de%20un%20problema." target="_blank">
+      Contáctanos
+    </a>
+
+  </div>
+
+  <!-- POPUP GOOGLE -->
+  <div id="googlePopup" class="popup hidden">
+    <div class="popup-box">
+
+      <div class="close-popup" onclick="closePopup()">✕</div>
+
+      <p class="popup-text">
+        ¡Estamos felices de saber que nos recomendarías!<br>
+        Por favor comparte tu experiencia haciendo clic en el logo.
+      </p>
+
+      <a href="https://www.google.com/maps/place/Transporte+Carela" target="_blank">
+          <img src="GoogleScritta.png" class="google-img" alt="Deja una reseña en Google">
+      </a>
+
+      <p class="popup-small">
+        Si tienes dudas que deseas tratar en privado, contáctanos.
+      </p>
+
+      <a class="contact-btn" href="https://wa.me/18096244955?text=Hola%20Transporte%20Carela,%20quiero%20hablar%20de%20un%20problema." target="_blank">
+        Contáctanos
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    function showGoogle() {
+      document.getElementById("googlePopup").classList.remove("hidden");
+    }
+
+    function closePopup() {
+      document.getElementById("googlePopup").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
